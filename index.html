@@ -1,22 +1,23 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus objetivos do ano</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+const botoes = document.querySelectorAll(".botao");
+console.log
+for(let i=0; i <  botoes.length; i++){
+    console.log(i);
+}
+botoes[i].onclick = function(){
+    
+    botoes[i].classList.add("ativo");
+}
+for(let j=0;j<botoes.length;j++){
+    botoes[j].classList.remove("ativo");
+}
+{
+    
+}
 
-<body>
-    <section class="conteudo-principal">
-        <h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
-        <div class="botoes">
-            <button class="botao ativo">nos formamos na escola</button>
-            <button class="botao">Tirar carteira de motorista</button>
-            <button class="botao">Fazer Enem</button>
-            <button class="botao">Fazer curso</button>
-        </div>
-    </section>
-</body>
-</html>
-<script src="main.js"></script>
+
+const contadores = document.querySelectorAll(".contador");
+const tempoObjetivo1 = new Date("2023-10-05T00:00:00");
+let tempoAtual = new Date();
+
+contadores[0].textContent = tempoObjetivo1 - tempoAtual;
+
